@@ -21,17 +21,20 @@
 
     body {
       min-height: 100vh;
-      overflow: hidden;
+      overflow-x: hidden;
       background: #000;
-      font-family: sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
 
     .hero {
       position: relative;
       min-height: 100vh;
-      display: grid;
-      place-items: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       isolation: isolate;
+      overflow: hidden;
+      padding: clamp(2rem, 6vw, 5rem);
     }
 
     .hero::before,
@@ -58,16 +61,74 @@
     }
 
     .logo {
-      width: min(62vw, 420px);
+      width: min(58vw, 420px);
       height: auto;
       display: block;
       filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.28));
+    }
+
+    .hero-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(2rem, 6vw, 5rem);
+      width: min(100%, 1040px);
+    }
+
+    .intro {
+      max-width: 34rem;
+      color: #fff;
+      text-shadow: 0 2px 18px rgba(0, 0, 0, 0.24);
+    }
+
+    .intro p {
+      margin: 0;
+      font-size: 1.25rem;
+      line-height: 1.5;
+      font-weight: 300;
+    }
+
+    .intro p + p {
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 1024px) {
+      .hero {
+        align-items: center;
+        text-align: center;
+        padding: 3.5rem 1.5rem 3rem;
+      }
+
+      .hero-content {
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .logo {
+        width: min(58vw, 270px);
+      }
+
+      .intro {
+        max-width: 29rem;
+      }
+
+      .intro p {
+        font-size: 1.25rem;
+      }
     }
   </style>
 </head>
 <body>
   <main class="hero" aria-label="Landing page">
-    <img class="logo" src="./assets/logo.svg" alt="Schimudt logo">
+    <div class="hero-content">
+      <img class="logo" src="./assets/logo.svg" alt="Schimudt logo">
+      <section class="intro" aria-labelledby="intro-title">
+        <p>What is Schimudt?</p>
+        <p>Schimudt is the beep that actually means something. Schimudt is the good idea that actually works. Schimudt is the moment things just click. Schimudt is the feeling that someone already thought of that. Schimudt is the good idea you had at 2:00 that actually worked in the morning.</p>
+        <p>Schimudt does not overthink. Schimudt just does.</p>
+        <p style="font-weight: bold;">Simple. That's Schimudt.</p>
+      </section>
+    </div>
   </main>
 </body>
 </html>
