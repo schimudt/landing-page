@@ -9,7 +9,7 @@
     102  Fang
     555  HugHug
 
-  schimudt.svg is embedded below as a 42x28, 1-bit BMP encoded as base64.
+  schimudt.svg is embedded below as a 30x20, 1-bit BMP encoded as base64.
 
   $T follows the phone's Time Display Format setting. Set the handset to
   System Settings > Time and Language > Time Display Format > 24-hour.
@@ -32,28 +32,22 @@
         </DisplayString>
       </DisplayElement>
       <DisplayBitmap isfile="false" isflash="false">
-        <Bitmap>Qk1iAQAAAAAAAIIAAABsAAAAKgAAABwAAAABAAEAAAAAAOAAAAAAAAAAAAAAAAIAAAACAAAAAAD/AAD/AAD/AAAAAAAA/0JHUnMAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAf/////gAAAAf////4AAAAA/////AAAAAA////wAAAAAB///+AAAAAAB///gAAAAAAB+H4AAAAAAADwHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAADwPAAAAAAAAfx+AAAAAAAH//+AAAAAAB///+AAAAAAP///8AAAAAD////8AAAAAf////4AAAAH/////4AAAAAAAAAAAAAAAAAAAAAAAAA</Bitmap>
-        <X>89</X>
+        <Bitmap>Qk3SAAAAAAAAAIIAAABsAAAAHgAAABQAAAABAAEAAAAAAFAAAAAAAAAAAAAAAAIAAAACAAAAAAD/AAD/AAD/AAAAAAAA/0JHUnMAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA////AAAAAAA////wH///4Af//4AB//4AAP/8AAA4cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQIAAAOHAAAP/8AAH//gAH//+AH///4D////AAAAAA</Bitmap>
+        <X>101</X>
         <Y>0</Y>
       </DisplayBitmap>
       <SoftKeys>
         <SoftKey>
-          <Action><SwitchSCR /></Action>
-          <Label>Fun</Label>
-          <displayCondition><conditionType>SubScreen</conditionType></displayCondition>
+          <Action><RemotePhonebook1 /></Action>
+          <Label>Phone</Label>
+        </SoftKey>
+        <SoftKey>
+          <Action><RemotePhonebook2 /></Action>
+          <Label>Pple</Label>
         </SoftKey>
         <SoftKey>
           <Action><Dial><Account>0</Account><Number>0</Number></Dial></Action>
-          <Label>Home</Label>
-        </SoftKey>
-        <SoftKey>
-          <Action><VoiceMail /></Action>
-          <Label>Messages</Label>
-          <displayCondition><conditionType>hasVoiceMail</conditionType></displayCondition>
-        </SoftKey>
-        <SoftKey>
-          <Action><Dial><Account>0</Account><Number>555</Number></Dial></Action>
-          <Label>HugHug</Label>
+          <Label>Menu</Label>
         </SoftKey>
       </SoftKeys>
     </IdleScreen>
@@ -64,22 +58,27 @@
       <DisplayElement>
         <DisplayString>
           <DisplayStr>SCHIMUDT</DisplayStr>
-          <X>48</X>
-          <Y>3</Y>
+          <X>36</X>
+          <Y>1</Y>
         </DisplayString>
         <DisplayString>
           <DisplayStr>HOME IVR</DisplayStr>
-          <X>48</X>
-          <Y>18</Y>
+          <X>36</X>
+          <Y>13</Y>
         </DisplayString>
-        <DisplayString>
-          <DisplayStr>200 ALL    101 TAN</DisplayStr>
-          <X>6</X>
-          <Y>33</Y>
+        <DisplayString halign="right" width="117" height="14" font="time_14">
+          <DisplayStr>$T</DisplayStr>
+          <X>0</X>
+          <Y>27</Y>
+        </DisplayString>
+        <DisplayString halign="right" width="132" height="11">
+          <DisplayStr>$f</DisplayStr>
+          <X>0</X>
+          <Y>40</Y>
         </DisplayString>
       </DisplayElement>
       <DisplayBitmap isfile="false" isflash="false">
-        <Bitmap>Qk1iAQAAAAAAAIIAAABsAAAAKgAAABwAAAABAAEAAAAAAOAAAAAAAAAAAAAAAAIAAAACAAAAAAD/AAD/AAD/AAAAAAAA/0JHUnMAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAf/////gAAAAf////4AAAAA/////AAAAAA////wAAAAAB///+AAAAAAB///gAAAAAAB+H4AAAAAAADwHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAADwPAAAAAAAAfx+AAAAAAAH//+AAAAAAB///+AAAAAAP///8AAAAAD////8AAAAAf////4AAAAH/////4AAAAAAAAAAAAAAAAAAAAAAAAA</Bitmap>
+        <Bitmap>Qk3SAAAAAAAAAIIAAABsAAAAHgAAABQAAAABAAEAAAAAAFAAAAAAAAAAAAAAAAIAAAACAAAAAAD/AAD/AAD/AAAAAAAA/0JHUnMAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA////AAAAAAA////wH///4Af//4AB//4AAP/8AAA4cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQIAAAOHAAAP/8AAH//gAH//+AH///4D////AAAAAA</Bitmap>
         <X>2</X>
         <Y>0</Y>
       </DisplayBitmap>
@@ -118,7 +117,7 @@
         </DisplayString>
       </DisplayElement>
       <DisplayBitmap isfile="false" isflash="false">
-        <Bitmap>Qk1iAQAAAAAAAIIAAABsAAAAKgAAABwAAAABAAEAAAAAAOAAAAAAAAAAAAAAAAIAAAACAAAAAAD/AAD/AAD/AAAAAAAA/0JHUnMAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAf/////gAAAAf////4AAAAA/////AAAAAA////wAAAAAB///+AAAAAAB///gAAAAAAB+H4AAAAAAADwHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAADwPAAAAAAAAfx+AAAAAAAH//+AAAAAAB///+AAAAAAP///8AAAAAD////8AAAAAf////4AAAAH/////4AAAAAAAAAAAAAAAAAAAAAAAAA</Bitmap>
+        <Bitmap>Qk3SAAAAAAAAAIIAAABsAAAAHgAAABQAAAABAAEAAAAAAFAAAAAAAAAAAAAAAAIAAAACAAAAAAD/AAD/AAD/AAAAAAAA/0JHUnMAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA////AAAAAAA////wH///4Af//4AB//4AAP/8AAA4cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQIAAAOHAAAP/8AAH//gAH//+AH///4D////AAAAAA</Bitmap>
         <X>3</X>
         <Y>15</Y>
       </DisplayBitmap>
@@ -132,29 +131,30 @@
     <!-- Compact clock page for the shorter display. -->
     <IdleScreen>
       <ShowStatusLine width="70">true</ShowStatusLine>
+      <DisplayElement>
+        <DisplayString halign="right" width="132" height="14" font="time_14">
+          <DisplayStr>$T</DisplayStr>
+          <X>0</X>
+          <Y>20</Y>
+        </DisplayString>
+      </DisplayElement>
       <DisplayBitmap isfile="false" isflash="false">
-        <Bitmap>Qk1iAQAAAAAAAIIAAABsAAAAKgAAABwAAAABAAEAAAAAAOAAAAAAAAAAAAAAAAIAAAACAAAAAAD/AAD/AAD/AAAAAAAA/0JHUnMAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAf/////gAAAAf////4AAAAA/////AAAAAA////wAAAAAB///+AAAAAAB///gAAAAAAB+H4AAAAAAADwHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAADwPAAAAAAAAfx+AAAAAAAH//+AAAAAAB///+AAAAAAP///8AAAAAD////8AAAAAf////4AAAAH/////4AAAAAAAAAAAAAAAAAAAAAAAAA</Bitmap>
-        <X>89</X>
-        <Y>2</Y>
+        <Bitmap>Qk3SAAAAAAAAAIIAAABsAAAAHgAAABQAAAABAAEAAAAAAFAAAAAAAAAAAAAAAAIAAAACAAAAAAD/AAD/AAD/AAAAAAAA/0JHUnMAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA////AAAAAAA////wH///4Af//4AB//4AAP/8AAA4cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQIAAAOHAAAP/8AAH//gAH//+AH///4D////AAAAAA</Bitmap>
+        <X>101</X>
+        <Y>0</Y>
       </DisplayBitmap>
       <SoftKeys>
         <SoftKey>
-          <Action><SwitchSCR /></Action>
-          <Label>Fun</Label>
-          <displayCondition><conditionType>SubScreen</conditionType></displayCondition>
+          <Action><RemotePhonebook1 /></Action>
+          <Label>Phone</Label>
+        </SoftKey>
+        <SoftKey>
+          <Action><RemotePhonebook2 /></Action>
+          <Label>Pple</Label>
         </SoftKey>
         <SoftKey>
           <Action><Dial><Account>0</Account><Number>0</Number></Dial></Action>
-          <Label>Home</Label>
-        </SoftKey>
-        <SoftKey>
-          <Action><VoiceMail /></Action>
-          <Label>Msg</Label>
-          <displayCondition><conditionType>hasVoiceMail</conditionType></displayCondition>
-        </SoftKey>
-        <SoftKey>
-          <Action><Dial><Account>0</Account><Number>555</Number></Dial></Action>
-          <Label>Hug</Label>
+          <Label>Menu</Label>
         </SoftKey>
       </SoftKeys>
     </IdleScreen>
@@ -165,22 +165,22 @@
       <DisplayElement>
         <DisplayString>
           <DisplayStr>SCHIMUDT</DisplayStr>
-          <X>48</X>
-          <Y>2</Y>
+          <X>36</X>
+          <Y>1</Y>
         </DisplayString>
         <DisplayString>
           <DisplayStr>HOME IVR</DisplayStr>
-          <X>48</X>
-          <Y>16</Y>
+          <X>36</X>
+          <Y>13</Y>
         </DisplayString>
-        <DisplayString>
-          <DisplayStr>ALL   TAN   FANG</DisplayStr>
-          <X>24</X>
-          <Y>29</Y>
+        <DisplayString halign="right" width="132" height="14" font="time_14">
+          <DisplayStr>$T</DisplayStr>
+          <X>0</X>
+          <Y>25</Y>
         </DisplayString>
       </DisplayElement>
       <DisplayBitmap isfile="false" isflash="false">
-        <Bitmap>Qk1iAQAAAAAAAIIAAABsAAAAKgAAABwAAAABAAEAAAAAAOAAAAAAAAAAAAAAAAIAAAACAAAAAAD/AAD/AAD/AAAAAAAA/0JHUnMAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAf/////gAAAAf////4AAAAA/////AAAAAA////wAAAAAB///+AAAAAAB///gAAAAAAB+H4AAAAAAADwHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAADwPAAAAAAAAfx+AAAAAAAH//+AAAAAAB///+AAAAAAP///8AAAAAD////8AAAAAf////4AAAAH/////4AAAAAAAAAAAAAAAAAAAAAAAAA</Bitmap>
+        <Bitmap>Qk3SAAAAAAAAAIIAAABsAAAAHgAAABQAAAABAAEAAAAAAFAAAAAAAAAAAAAAAAIAAAACAAAAAAD/AAD/AAD/AAAAAAAA/0JHUnMAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA////AAAAAAA////wH///4Af//4AB//4AAP/8AAA4cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQIAAAOHAAAP/8AAH//gAH//+AH///4D////AAAAAA</Bitmap>
         <X>2</X>
         <Y>0</Y>
       </DisplayBitmap>
@@ -219,7 +219,7 @@
         </DisplayString>
       </DisplayElement>
       <DisplayBitmap isfile="false" isflash="false">
-        <Bitmap>Qk1iAQAAAAAAAIIAAABsAAAAKgAAABwAAAABAAEAAAAAAOAAAAAAAAAAAAAAAAIAAAACAAAAAAD/AAD/AAD/AAAAAAAA/0JHUnMAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAf/////gAAAAf////4AAAAA/////AAAAAA////wAAAAAB///+AAAAAAB///gAAAAAAB+H4AAAAAAADwHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAADwPAAAAAAAAfx+AAAAAAAH//+AAAAAAB///+AAAAAAP///8AAAAAD////8AAAAAf////4AAAAH/////4AAAAAAAAAAAAAAAAAAAAAAAAA</Bitmap>
+        <Bitmap>Qk3SAAAAAAAAAIIAAABsAAAAHgAAABQAAAABAAEAAAAAAFAAAAAAAAAAAAAAAAIAAAACAAAAAAD/AAD/AAD/AAAAAAAA/0JHUnMAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA////AAAAAAA////wH///4Af//4AB//4AAP/8AAA4cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQIAAAOHAAAP/8AAH//gAH//+AH///4D////AAAAAA</Bitmap>
         <X>3</X>
         <Y>5</Y>
       </DisplayBitmap>
