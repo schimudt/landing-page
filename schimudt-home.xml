@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Schimudt Home launcher for Grandstream GRP2601/02/03/04.
+
+  PBX extension map:
+      0  Home IVR
+    200  Ring all
+    101  Tan
+    102  Fang
+    555  HugHug
+
+  schimudt.svg is embedded below as a 42x28, 1-bit BMP encoded as base64.
+
+  $T follows the phone's Time Display Format setting. Set the handset to
+  System Settings > Time and Language > Time Display Format > 24-hour.
+-->
+<Screens>
+  <Screen model="GRP2603;GRP2604" width="132" height="64">
+    <!-- Page 1: quiet everyday clock. -->
+    <IdleScreen>
+      <ShowStatusLine width="70">true</ShowStatusLine>
+      <DisplayElement>
+        <DisplayString halign="right" width="117" height="14" font="time_14">
+          <DisplayStr>$T</DisplayStr>
+          <X>0</X>
+          <Y>27</Y>
+        </DisplayString>
+        <DisplayString halign="right" width="132" height="11">
+          <DisplayStr>$f</DisplayStr>
+          <X>0</X>
+          <Y>40</Y>
+        </DisplayString>
+      </DisplayElement>
+      <DisplayBitmap isfile="false" isflash="false">
+        <Bitmap>Qk1iAQAAAAAAAIIAAABsAAAAKgAAABwAAAABAAEAAAAAAOAAAAAAAAAAAAAAAAIAAAACAAAAAAD/AAD/AAD/AAAAAAAA/0JHUnMAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAf/////gAAAAf////4AAAAA/////AAAAAA////wAAAAAB///+AAAAAAB///gAAAAAAB+H4AAAAAAADwHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAADwPAAAAAAAAfx+AAAAAAAH//+AAAAAAB///+AAAAAAP///8AAAAAD////8AAAAAf////4AAAAH/////4AAAAAAAAAAAAAAAAAAAAAAAAA</Bitmap>
+        <X>89</X>
+        <Y>0</Y>
+      </DisplayBitmap>
+      <SoftKeys>
+        <SoftKey>
+          <Action><SwitchSCR /></Action>
+          <Label>Fun</Label>
+          <displayCondition><conditionType>SubScreen</conditionType></displayCondition>
+        </SoftKey>
+        <SoftKey>
+          <Action><Dial><Account>0</Account><Number>0</Number></Dial></Action>
+          <Label>Home</Label>
+        </SoftKey>
+        <SoftKey>
+          <Action><VoiceMail /></Action>
+          <Label>Messages</Label>
+          <displayCondition><conditionType>hasVoiceMail</conditionType></displayCondition>
+        </SoftKey>
+        <SoftKey>
+          <Action><Dial><Account>0</Account><Number>555</Number></Dial></Action>
+          <Label>HugHug</Label>
+        </SoftKey>
+      </SoftKeys>
+    </IdleScreen>
+
+    <!-- Page 2: playful IVR launch pad. -->
+    <IdleScreen>
+      <ShowStatusLine>false</ShowStatusLine>
+      <DisplayElement>
+        <DisplayString>
+          <DisplayStr>SCHIMUDT</DisplayStr>
+          <X>48</X>
+          <Y>3</Y>
+        </DisplayString>
+        <DisplayString>
+          <DisplayStr>HOME IVR</DisplayStr>
+          <X>48</X>
+          <Y>18</Y>
+        </DisplayString>
+        <DisplayString>
+          <DisplayStr>200 ALL    101 TAN</DisplayStr>
+          <X>6</X>
+          <Y>33</Y>
+        </DisplayString>
+      </DisplayElement>
+      <DisplayBitmap isfile="false" isflash="false">
+        <Bitmap>Qk1iAQAAAAAAAIIAAABsAAAAKgAAABwAAAABAAEAAAAAAOAAAAAAAAAAAAAAAAIAAAACAAAAAAD/AAD/AAD/AAAAAAAA/0JHUnMAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAf/////gAAAAf////4AAAAA/////AAAAAA////wAAAAAB///+AAAAAAB///gAAAAAAB+H4AAAAAAADwHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAADwPAAAAAAAAfx+AAAAAAAH//+AAAAAAB///+AAAAAAP///8AAAAAD////8AAAAAf////4AAAAH/////4AAAAAAAAAAAAAAAAAAAAAAAAA</Bitmap>
+        <X>2</X>
+        <Y>0</Y>
+      </DisplayBitmap>
+      <SoftKeys>
+        <SoftKey>
+          <Action><SwitchSCR /></Action>
+          <Label>Clock</Label>
+          <displayCondition><conditionType>SubScreen</conditionType></displayCondition>
+        </SoftKey>
+        <SoftKey>
+          <Action><Dial><Account>0</Account><Number>200</Number></Dial></Action>
+          <Label>All</Label>
+        </SoftKey>
+        <SoftKey>
+          <Action><Dial><Account>0</Account><Number>101</Number></Dial></Action>
+          <Label>Tan</Label>
+        </SoftKey>
+        <SoftKey>
+          <Action><Dial><Account>0</Account><Number>102</Number></Dial></Action>
+          <Label>Fang</Label>
+        </SoftKey>
+      </SoftKeys>
+    </IdleScreen>
+
+    <LockedScreen>
+      <DisplayElement>
+        <DisplayString halign="right" width="105" height="14" font="time_14">
+          <DisplayStr>$T</DisplayStr>
+          <X>0</X>
+          <Y>17</Y>
+        </DisplayString>
+        <DisplayString halign="right" width="120" height="11">
+          <DisplayStr>$f</DisplayStr>
+          <X>0</X>
+          <Y>30</Y>
+        </DisplayString>
+      </DisplayElement>
+      <DisplayBitmap isfile="false" isflash="false">
+        <Bitmap>Qk1iAQAAAAAAAIIAAABsAAAAKgAAABwAAAABAAEAAAAAAOAAAAAAAAAAAAAAAAIAAAACAAAAAAD/AAD/AAD/AAAAAAAA/0JHUnMAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAf/////gAAAAf////4AAAAA/////AAAAAA////wAAAAAB///+AAAAAAB///gAAAAAAB+H4AAAAAAADwHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAADwPAAAAAAAAfx+AAAAAAAH//+AAAAAAB///+AAAAAAP///8AAAAAD////8AAAAAf////4AAAAH/////4AAAAAAAAAAAAAAAAAAAAAAAAA</Bitmap>
+        <X>3</X>
+        <Y>15</Y>
+      </DisplayBitmap>
+      <SoftKeys>
+        <SoftKey><Action><Info /></Action></SoftKey>
+      </SoftKeys>
+    </LockedScreen>
+  </Screen>
+
+  <Screen model="GRP2601,GRP2602" width="132" height="48">
+    <!-- Compact clock page for the shorter display. -->
+    <IdleScreen>
+      <ShowStatusLine width="70">true</ShowStatusLine>
+      <DisplayBitmap isfile="false" isflash="false">
+        <Bitmap>Qk1iAQAAAAAAAIIAAABsAAAAKgAAABwAAAABAAEAAAAAAOAAAAAAAAAAAAAAAAIAAAACAAAAAAD/AAD/AAD/AAAAAAAA/0JHUnMAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAf/////gAAAAf////4AAAAA/////AAAAAA////wAAAAAB///+AAAAAAB///gAAAAAAB+H4AAAAAAADwHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAADwPAAAAAAAAfx+AAAAAAAH//+AAAAAAB///+AAAAAAP///8AAAAAD////8AAAAAf////4AAAAH/////4AAAAAAAAAAAAAAAAAAAAAAAAA</Bitmap>
+        <X>89</X>
+        <Y>2</Y>
+      </DisplayBitmap>
+      <SoftKeys>
+        <SoftKey>
+          <Action><SwitchSCR /></Action>
+          <Label>Fun</Label>
+          <displayCondition><conditionType>SubScreen</conditionType></displayCondition>
+        </SoftKey>
+        <SoftKey>
+          <Action><Dial><Account>0</Account><Number>0</Number></Dial></Action>
+          <Label>Home</Label>
+        </SoftKey>
+        <SoftKey>
+          <Action><VoiceMail /></Action>
+          <Label>Msg</Label>
+          <displayCondition><conditionType>hasVoiceMail</conditionType></displayCondition>
+        </SoftKey>
+        <SoftKey>
+          <Action><Dial><Account>0</Account><Number>555</Number></Dial></Action>
+          <Label>Hug</Label>
+        </SoftKey>
+      </SoftKeys>
+    </IdleScreen>
+
+    <!-- Compact IVR launch pad. -->
+    <IdleScreen>
+      <ShowStatusLine>false</ShowStatusLine>
+      <DisplayElement>
+        <DisplayString>
+          <DisplayStr>SCHIMUDT</DisplayStr>
+          <X>48</X>
+          <Y>2</Y>
+        </DisplayString>
+        <DisplayString>
+          <DisplayStr>HOME IVR</DisplayStr>
+          <X>48</X>
+          <Y>16</Y>
+        </DisplayString>
+        <DisplayString>
+          <DisplayStr>ALL   TAN   FANG</DisplayStr>
+          <X>24</X>
+          <Y>29</Y>
+        </DisplayString>
+      </DisplayElement>
+      <DisplayBitmap isfile="false" isflash="false">
+        <Bitmap>Qk1iAQAAAAAAAIIAAABsAAAAKgAAABwAAAABAAEAAAAAAOAAAAAAAAAAAAAAAAIAAAACAAAAAAD/AAD/AAD/AAAAAAAA/0JHUnMAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAf/////gAAAAf////4AAAAA/////AAAAAA////wAAAAAB///+AAAAAAB///gAAAAAAB+H4AAAAAAADwHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAADwPAAAAAAAAfx+AAAAAAAH//+AAAAAAB///+AAAAAAP///8AAAAAD////8AAAAAf////4AAAAH/////4AAAAAAAAAAAAAAAAAAAAAAAAA</Bitmap>
+        <X>2</X>
+        <Y>0</Y>
+      </DisplayBitmap>
+      <SoftKeys>
+        <SoftKey>
+          <Action><SwitchSCR /></Action>
+          <Label>Clock</Label>
+          <displayCondition><conditionType>SubScreen</conditionType></displayCondition>
+        </SoftKey>
+        <SoftKey>
+          <Action><Dial><Account>0</Account><Number>200</Number></Dial></Action>
+          <Label>All</Label>
+        </SoftKey>
+        <SoftKey>
+          <Action><Dial><Account>0</Account><Number>101</Number></Dial></Action>
+          <Label>Tan</Label>
+        </SoftKey>
+        <SoftKey>
+          <Action><Dial><Account>0</Account><Number>102</Number></Dial></Action>
+          <Label>Fang</Label>
+        </SoftKey>
+      </SoftKeys>
+    </IdleScreen>
+
+    <LockedScreen>
+      <DisplayElement>
+        <DisplayString halign="right" width="105" height="14" font="time_14">
+          <DisplayStr>$T</DisplayStr>
+          <X>0</X>
+          <Y>7</Y>
+        </DisplayString>
+        <DisplayString halign="right" width="120" height="11">
+          <DisplayStr>$f</DisplayStr>
+          <X>0</X>
+          <Y>20</Y>
+        </DisplayString>
+      </DisplayElement>
+      <DisplayBitmap isfile="false" isflash="false">
+        <Bitmap>Qk1iAQAAAAAAAIIAAABsAAAAKgAAABwAAAABAAEAAAAAAOAAAAAAAAAAAAAAAAIAAAACAAAAAAD/AAD/AAD/AAAAAAAA/0JHUnMAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAf/////gAAAAf////4AAAAA/////AAAAAA////wAAAAAB///+AAAAAAB///gAAAAAAB+H4AAAAAAADwHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAADwPAAAAAAAAfx+AAAAAAAH//+AAAAAAB///+AAAAAAP///8AAAAAD////8AAAAAf////4AAAAH/////4AAAAAAAAAAAAAAAAAAAAAAAAA</Bitmap>
+        <X>3</X>
+        <Y>5</Y>
+      </DisplayBitmap>
+      <SoftKeys>
+        <SoftKey><Action><Info /></Action></SoftKey>
+      </SoftKeys>
+    </LockedScreen>
+  </Screen>
+</Screens>
