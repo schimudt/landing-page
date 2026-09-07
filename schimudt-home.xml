@@ -46,6 +46,11 @@
           <Label>Pple</Label>
         </SoftKey>
         <SoftKey>
+          <Action><SwitchSCR /></Action>
+          <Label>&#160;</Label>
+          <displayCondition><conditionType>SubScreen</conditionType></displayCondition>
+        </SoftKey>
+        <SoftKey>
           <Action><Dial><Account>0</Account><Number>0</Number></Dial></Action>
           <Label>Menu</Label>
         </SoftKey>
@@ -130,10 +135,15 @@
   <Screen model="GRP2601,GRP2602" width="132" height="48">
     <!-- Compact clock page for the shorter display. -->
     <IdleScreen>
-      <ShowStatusLine width="70">true</ShowStatusLine>
+      <ShowStatusLine>false</ShowStatusLine>
       <DisplayElement>
-        <DisplayString halign="right" width="132" height="14" font="time_14">
+        <DisplayString halign="right" width="97" height="14" font="time_14">
           <DisplayStr>$T</DisplayStr>
+          <X>0</X>
+          <Y>5</Y>
+        </DisplayString>
+        <DisplayString halign="right" width="132" height="11">
+          <DisplayStr>$f</DisplayStr>
           <X>0</X>
           <Y>20</Y>
         </DisplayString>
@@ -151,6 +161,11 @@
         <SoftKey>
           <Action><RemotePhonebook2 /></Action>
           <Label>Pple</Label>
+        </SoftKey>
+        <SoftKey>
+          <Action><SwitchSCR /></Action>
+          <Label>&#160;</Label>
+          <displayCondition><conditionType>SubScreen</conditionType></displayCondition>
         </SoftKey>
         <SoftKey>
           <Action><Dial><Account>0</Account><Number>0</Number></Dial></Action>
