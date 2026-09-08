@@ -20,21 +20,21 @@
     <IdleScreen>
       <ShowStatusLine width="70">true</ShowStatusLine>
       <DisplayElement>
-        <DisplayString halign="right" width="117" height="14" font="time_14">
+        <DisplayString halign="right" width="40" height="14" font="time_14">
           <DisplayStr>$T</DisplayStr>
-          <X>0</X>
-          <Y>27</Y>
+          <X>92</X>
+          <Y>1</Y>
         </DisplayString>
-        <DisplayString halign="right" width="132" height="11">
+        <DisplayString halign="right" width="62" height="11">
           <DisplayStr>$f</DisplayStr>
-          <X>0</X>
-          <Y>40</Y>
+          <X>70</X>
+          <Y>16</Y>
         </DisplayString>
       </DisplayElement>
       <DisplayBitmap isfile="false" isflash="false">
         <Bitmap>Qk26AAAAAAAAAIIAAABsAAAAFQAAAA4AAAABAAEAAAAAADgAAAAAAAAAAAAAAAIAAAACAAAAAAD/AAD/AAD/AAAAAAAA/0JHUnMAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA////AAAAAAA//+AAH//AAAffAAABBAAAAAAAAAAAAAAAAAAAAAAAAAEEAAAH3wAAH//AAD//4AAAAAAA</Bitmap>
-        <X>110</X>
-        <Y>0</Y>
+        <X>70</X>
+        <Y>1</Y>
       </DisplayBitmap>
       <SoftKeys>
         <SoftKey>
@@ -59,33 +59,23 @@
 
     <!-- Page 2: playful IVR launch pad. -->
     <IdleScreen>
-      <ShowStatusLine>false</ShowStatusLine>
+      <ShowStatusLine width="70">true</ShowStatusLine>
       <DisplayElement>
-        <DisplayString>
-          <DisplayStr>SCHIMUDT</DisplayStr>
-          <X>36</X>
+        <DisplayString halign="right" width="40" height="14" font="time_14">
+          <DisplayStr>$T</DisplayStr>
+          <X>92</X>
           <Y>1</Y>
         </DisplayString>
-        <DisplayString>
-          <DisplayStr>HOME IVR</DisplayStr>
-          <X>36</X>
-          <Y>13</Y>
-        </DisplayString>
-        <DisplayString halign="right" width="117" height="14" font="time_14">
-          <DisplayStr>$T</DisplayStr>
-          <X>0</X>
-          <Y>27</Y>
-        </DisplayString>
-        <DisplayString halign="right" width="132" height="11">
+        <DisplayString halign="right" width="62" height="11">
           <DisplayStr>$f</DisplayStr>
-          <X>0</X>
-          <Y>40</Y>
+          <X>70</X>
+          <Y>16</Y>
         </DisplayString>
       </DisplayElement>
       <DisplayBitmap isfile="false" isflash="false">
         <Bitmap>Qk26AAAAAAAAAIIAAABsAAAAFQAAAA4AAAABAAEAAAAAADgAAAAAAAAAAAAAAAIAAAACAAAAAAD/AAD/AAD/AAAAAAAA/0JHUnMAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA////AAAAAAA//+AAH//AAAffAAABBAAAAAAAAAAAAAAAAAAAAAAAAAEEAAAH3wAAH//AAD//4AAAAAAA</Bitmap>
-        <X>2</X>
-        <Y>0</Y>
+        <X>70</X>
+        <Y>1</Y>
       </DisplayBitmap>
       <SoftKeys>
         <SoftKey>
@@ -110,20 +100,20 @@
 
     <LockedScreen>
       <DisplayElement>
-        <DisplayString halign="right" width="105" height="14" font="time_14">
+        <DisplayString halign="right" width="40" height="14" font="time_14">
           <DisplayStr>$T</DisplayStr>
-          <X>0</X>
+          <X>92</X>
           <Y>17</Y>
         </DisplayString>
-        <DisplayString halign="right" width="120" height="11">
+        <DisplayString halign="right" width="62" height="11">
           <DisplayStr>$f</DisplayStr>
-          <X>0</X>
+          <X>70</X>
           <Y>30</Y>
         </DisplayString>
       </DisplayElement>
       <DisplayBitmap isfile="false" isflash="false">
         <Bitmap>Qk26AAAAAAAAAIIAAABsAAAAFQAAAA4AAAABAAEAAAAAADgAAAAAAAAAAAAAAAIAAAACAAAAAAD/AAD/AAD/AAAAAAAA/0JHUnMAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA////AAAAAAA//+AAH//AAAffAAABBAAAAAAAAAAAAAAAAAAAAAAAAAEEAAAH3wAAH//AAD//4AAAAAAA</Bitmap>
-        <X>3</X>
+        <X>70</X>
         <Y>15</Y>
       </DisplayBitmap>
       <SoftKeys>
@@ -135,23 +125,23 @@
   <Screen model="GRP2601,GRP2602" width="132" height="48">
     <!-- Compact clock page for the shorter display. -->
     <IdleScreen>
-      <ShowStatusLine>false</ShowStatusLine>
+      <ShowStatusLine width="70">true</ShowStatusLine>
       <DisplayElement>
-        <DisplayString halign="right" width="97" height="14" font="time_14">
+        <DisplayString halign="right" width="40" height="14" font="time_14">
           <DisplayStr>$T</DisplayStr>
-          <X>0</X>
-          <Y>5</Y>
+          <X>92</X>
+          <Y>1</Y>
         </DisplayString>
-        <DisplayString halign="right" width="132" height="11">
+        <DisplayString halign="right" width="62" height="11">
           <DisplayStr>$f</DisplayStr>
-          <X>0</X>
-          <Y>20</Y>
+          <X>70</X>
+          <Y>16</Y>
         </DisplayString>
       </DisplayElement>
       <DisplayBitmap isfile="false" isflash="false">
         <Bitmap>Qk26AAAAAAAAAIIAAABsAAAAFQAAAA4AAAABAAEAAAAAADgAAAAAAAAAAAAAAAIAAAACAAAAAAD/AAD/AAD/AAAAAAAA/0JHUnMAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA////AAAAAAA//+AAH//AAAffAAABBAAAAAAAAAAAAAAAAAAAAAAAAAEEAAAH3wAAH//AAD//4AAAAAAA</Bitmap>
-        <X>110</X>
-        <Y>0</Y>
+        <X>70</X>
+        <Y>1</Y>
       </DisplayBitmap>
       <SoftKeys>
         <SoftKey>
@@ -176,28 +166,23 @@
 
     <!-- Compact IVR launch pad. -->
     <IdleScreen>
-      <ShowStatusLine>false</ShowStatusLine>
+      <ShowStatusLine width="70">true</ShowStatusLine>
       <DisplayElement>
-        <DisplayString>
-          <DisplayStr>SCHIMUDT</DisplayStr>
-          <X>36</X>
+        <DisplayString halign="right" width="40" height="14" font="time_14">
+          <DisplayStr>$T</DisplayStr>
+          <X>92</X>
           <Y>1</Y>
         </DisplayString>
-        <DisplayString>
-          <DisplayStr>HOME IVR</DisplayStr>
-          <X>36</X>
-          <Y>13</Y>
-        </DisplayString>
-        <DisplayString halign="right" width="132" height="14" font="time_14">
-          <DisplayStr>$T</DisplayStr>
-          <X>0</X>
-          <Y>25</Y>
+        <DisplayString halign="right" width="62" height="11">
+          <DisplayStr>$f</DisplayStr>
+          <X>70</X>
+          <Y>16</Y>
         </DisplayString>
       </DisplayElement>
       <DisplayBitmap isfile="false" isflash="false">
         <Bitmap>Qk26AAAAAAAAAIIAAABsAAAAFQAAAA4AAAABAAEAAAAAADgAAAAAAAAAAAAAAAIAAAACAAAAAAD/AAD/AAD/AAAAAAAA/0JHUnMAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA////AAAAAAA//+AAH//AAAffAAABBAAAAAAAAAAAAAAAAAAAAAAAAAEEAAAH3wAAH//AAD//4AAAAAAA</Bitmap>
-        <X>2</X>
-        <Y>0</Y>
+        <X>70</X>
+        <Y>1</Y>
       </DisplayBitmap>
       <SoftKeys>
         <SoftKey>
@@ -222,20 +207,20 @@
 
     <LockedScreen>
       <DisplayElement>
-        <DisplayString halign="right" width="105" height="14" font="time_14">
+        <DisplayString halign="right" width="40" height="14" font="time_14">
           <DisplayStr>$T</DisplayStr>
-          <X>0</X>
-          <Y>7</Y>
+          <X>92</X>
+          <Y>5</Y>
         </DisplayString>
-        <DisplayString halign="right" width="120" height="11">
+        <DisplayString halign="right" width="62" height="11">
           <DisplayStr>$f</DisplayStr>
-          <X>0</X>
+          <X>70</X>
           <Y>20</Y>
         </DisplayString>
       </DisplayElement>
       <DisplayBitmap isfile="false" isflash="false">
         <Bitmap>Qk26AAAAAAAAAIIAAABsAAAAFQAAAA4AAAABAAEAAAAAADgAAAAAAAAAAAAAAAIAAAACAAAAAAD/AAD/AAD/AAAAAAAA/0JHUnMAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA////AAAAAAA//+AAH//AAAffAAABBAAAAAAAAAAAAAAAAAAAAAAAAAEEAAAH3wAAH//AAD//4AAAAAAA</Bitmap>
-        <X>3</X>
+        <X>70</X>
         <Y>5</Y>
       </DisplayBitmap>
       <SoftKeys>
